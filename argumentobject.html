@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <title>
+       arguement objects
+    </title>
+    <head>
+        <body>
+            <p id="one"></p>
+            <script>
+                function max1(){
+                    document.write("max")
+                    var large=0
+                    for(var i=0; i<arguments.length;i++)
+                {
+                    if(arguments[i] >large)
+                {
+                    large=arguments[i]
+                }
+                }
+                document.write(large)
+                return large
+                }
+                document.getElementById("one").innerHTML=max1(33,54,222)
+            </script>
+        </body>
+    </head>
+</html>
