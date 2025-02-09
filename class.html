@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            class
+        </title>
+    </head>
+    <body>
+        <script>
+            class student
+            {
+                constructor(name,year)
+                {
+                    this.name=name
+                      this.year=year
+                    
+                }
+                age()
+                {
+                    var dt=new Date().getFullYear()
+                    var a=dt-this.year
+                    document.write("my name is",this.name+"<br>")
+                    document.write("my age is",a+"<br>")
+                    
+                }
+
+            }
+            student1=new student("manav",2020)
+            student1.age()
+
+        </script>
+    </body>
+</html>

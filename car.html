@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            inheritence
+        </title>
+    </head>
+    <body>
+        <script>
+            class cars
+            {
+                constructor(brand)
+                {
+                    this.brand=brand
+                }
+              present()
+                {
+                    document.write(this.brand)
+                }
+               
+            }
+            class model extends cars{
+                constructor(brand,year){
+                    super(brand)
+                    this.year=year}
+                    present1()
+                {
+                    document.write(this.brand)
+                    document.write(this.year)
+                }
+            }
+m1=model("honda",2025)
+m1.present1()
+        </script>
+    </body>
+</html>
