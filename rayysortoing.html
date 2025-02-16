@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            rayy sorting
+        </title>
+    </head>
+    <body>
+        <button onclick="asc()">ascending order</button>
+        <button onclick="dsc()">descending order</button>
+        <p id="result"></p>
+        <script>
+            var a= [12,34,76,99,87,65,88]
+            document.getElementById("result").innerHTML=a
+           function asc(){
+            a.sort (function (a,b){return(a-b)})
+            document.getElementById("result").innerHTML=a
+           }
+           function dsc(){
+            a.sort (function (a,b){return(b-a)})
+            document.getElementById("result").innerHTML=a
+           }
+            
+        </script>
+    </body>
+</html>
