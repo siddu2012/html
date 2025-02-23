@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            json
+        </title>
+    </head>
+    <body>
+        <h2>convert objects to json and json to objects</h2>
+        <script>
+            var student= {"name": "riya",
+            "age" :13}
+            document.write(student.name,student.age)
+            var s = JSON .stringify(student)
+            var s1 = JSON.parse(s)
+            document.write(s1.name,s1.age)
+        </script>
+    </body>
+</html>
