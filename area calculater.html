@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            area calculater
+        </title>
+    </head>
+    <body>
+        <h1>area calculater</h1>
+       <script>
+        var choice
+        choice=prompt("enter rectangle1  2 triangle 3 square 4 circle")
+        if (choice=="1")
+       {
+        var l=prompt ("enter the length")
+        var b=prompt ("enter the bredth")
+        var area=Number(l)*Number(b)
+        alert("the area of the rectangle is"+ area)
+        
+       }
+
+       else if (choice=="2")
+       {
+        var l=prompt ("enter the length")
+        var b=prompt ("enter the bredth")
+        var area=Number(l)*Number(b)*1/2
+        alert("the area of the triangle is"+ area)
+        
+       }
+      else if (choice=="3")
+       {
+        var l=prompt ("enter the base")
+        var b=prompt ("enter the height")
+        var area=Number(l)*Number(b)
+        alert("the area of the parolelogram is"+ area)
+        
+       }
+      else  if (choice=="4")
+       {
+        var r=prompt ("enter the radius")
+       
+        var area=Number(r)*Number(r)*22/7
+        alert("the area of the circle is"+ area)
+        
+       }
+
+        
+       </script>
+    </body>
+</html>
