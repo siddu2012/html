@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            palidrome
+        </title>
+    </head>
+    <body>
+        <h1>palidrome</h1>
+        <script>
+            function palidrome(mystring)
+            {
+                var input=mystring.replace(/[^a-z0-9]/ig,'').toLowerCase()
+               
+var reverseinput=input.split('').reverse().join('')
+
+if (input==reverseinput)
+{
+    document.write(mystring+"is apolindrone")
+}
+else{
+    document.write(mystring+"is not apolindrone")
+}
+            }
+            palidrome("madam")
+        </script>
+    </body>
+</html>
