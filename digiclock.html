@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            digital clock (digiclock)
+        </title>
+    </head>
+    <body>
+        <div id="result" onload="showtime()">  </div>
+        <script>
+ function showtime(){
+   var dt=new Date()
+   var h=dt.getHours()
+   var m=dt.getMinutes()
+   var s=dt.getSeconds()
+   var session="am"
+   if (h>12)
+   {
+    h=h-12
+    session="pm"
+   }
+    h=(h<10)?"0"+h:h
+    m=(m<10)?"0"+m:m
+    s=(s<10)?"0"+s:s
+    var t=h+":"+m+":"+s+session
+    document.getElementById("result").innerHTML=t
+    setTimeout(showtime,1000)
+
+   
+ }
+ showtime()
+        </script>
+                 
+    </body>
+</html>
