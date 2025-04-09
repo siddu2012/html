@@ -23,11 +23,41 @@
                 var buttonstart=document.getElementById("buttonstart")
                 var buttonstop=document.getElementById("buttonstop")
                 var buttonreset=document.getElementById("buttonreset")
-                button start.onclick=function(){
-                    
+                buttonstart.onclick=function(){
+                    clearinterval=setinterval(starttimer,10)  
+                    clearinterval(interval)
+                  
+
                 }
-                
+                buttonstop.onclick=function(){
+                clearinterval(interval)
             }
+            buttonreset.onclick=function(){
+                clearinterval(interval)
+           
+            miliseconds="00"
+            seconds="00"
+            appendmilliseconds.innerHTML=appendmilliseconds
+            appendseconds.innerHTML=seconds
+        }
+            function starttimer(){
+                milliseconds++
+                if(milliseconds<=9){
+appendmilliseconds.innerHTML="0"+milliseconds
+                }
+            }
+        if(milliseconds>=9){
+            appendmilliseconds.innerHTML=milliseconds
+        }
+        if(milliseconds>=99){
+            seconds++
+            appendmilliseconds.innerHTML="0"+0
+            milliseconds=0
+            appendseconds.innerHTML="0"+0}
+            if (seconds>9){
+                appendseconds.innerHTML=seconds
+            }
+        }
         </script>
         
         
