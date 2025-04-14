@@ -16,9 +16,28 @@
     </style>
     <body>
         <div>click on the dice</div>
-        <div id="dice"onclick-"startstop()"></div>
+        <div id="dice"onclick="startstop()"></div>
 <script>
-    var dice:AbortController
+    var dice;
+    var dices=['&#9856;','&#9857;','&#9858;','&#9859;','&#9860;','&#9861;']
+    function change(){
+        var random=mathfloor(math.random()* 6)
+        dice.innerHTML=dices[random]
+    }
+    function startstop(){
+        if (stopped){
+        stopped=false 
+    to=setinterval(change<100)
+    }
+    {
+        clearInterval(t)
+        stopped=true
+    }
+}
+window.onload=function()
+ dice=document.getElementById("dice")
+stopstart()
+
 </script>
     </body>
 </html>
