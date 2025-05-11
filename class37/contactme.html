@@ -5,6 +5,20 @@
             capstone
         </title>
         <style>
+            .contact{
+                width: 350px;
+                height: 230px;
+                font-size: 16px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background-color: blue;
+                border: 2px solid red; 
+                color: rgb(196, 255, 253);
+                border-radius: 10px;
+                text-align:center;
+                padding: 50px;
+                margin:35px ;
+                
+            }
             .footer{
                 width: 100%;
                 left:0;
@@ -44,6 +58,7 @@ body{
     background-color: brown;
     margin-left: 0px;
     margin: 0px;
+   
 
 }
 h1{
@@ -52,42 +67,44 @@ h1{
     text-decoration: underline;
     text-transform: capitalize;
 }
-.carousel-container{
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    height: 300px;
-}
-.myslides{
-    display:none;
-    max-width: 100%;
-    max-height: 100%;
-}
+
+
 
         </style>
 
     </head>
     <body>
 
+
     
     <div class="topnav">
-        <a href="index.html"class=active>home</a>
+        <a href="index.html">home</a>
 
         <a  href="aboutus.html">about</a>
         
-        <a href="contactme.html">contact me</a>
+        <a href="contactme.html"class="active">contact me</a>
         
         <a href="gallery.html">Gallery</a>
         
         </div>
 
     </div>
-    <h1>my favorite places</h1>
-    <div class="carousel-container">
-        <img class="myslides" src="pic1.png" height=300px width="300px">
-        <img class="myslides" src="pic2.png" height=300px width="300px">
-        <img class="myslides" src="pic3.png" height=300px width="300px">
+    <h1>contact me</h1>
+    <div class="contact">
+        <form>
+            name <input type="text">
+            <br><br>
+             email <input type="email">
+             <br><br>
+             description
+             <br><br>
+             <textarea width="200px height=200px"></textarea>
+             <br><br>
+             <input type="submit">
+        </form>
     </div>
+
+    
     <div class="footer"> 
         @all copyright reserved to siddharth kumaran .s 
         <br><br>
