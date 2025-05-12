@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Argument objects</title>
+    </head>
+    <body>
+        <h1> arguments object</h1>
+        <p id = "id1"></p>
+        <script>
+            function find_max(){
+                
+                len1 = arguments.length
+                
+                var sum = 0
+                for (var i = 0; i <len1; i++)
+                {
+                
+                sum =  sum + arguments[i]
+                }
+                 document.write(sum)
+            
+            return sum 
+             
+            }
+            document.getElementById("id1").innerHTML = "the sum value " +find_max(12,333,34,56)
+        </script>
+    </body>
+</html>
+               
+      
