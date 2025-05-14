@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            perimeter calculater
+        </title>
+    </head>
+    <body>
+        <h1>
+            perimeter calculater
+        </h1>
+        <script>
+             var choice
+        choice=prompt("enter triangle1  2 rectangle 3 square 4 circle")
+        if (choice=="1")
+       {
+        var a=prompt ("enter the side")
+        var b=prompt ("enter the side")
+        var c=prompt("enter the side")
+        var p=Number(a)+Number(b)+Number(c)
+        alert("the perimeter of the triangle is"+ p)
+        
+       }
+
+       else if (choice=="2")
+       {
+        var l=prompt ("enter the length")
+        var b=prompt ("enter the bredth")
+        var p=(Number(l)+Number(b))*2
+        alert("the area of the triangle is"+ p)
+        
+       }
+      else if (choice=="3")
+       {
+        var s=prompt ("enter the side")
+        var p=Number(s)*4
+        alert("the area of the parolelogram is"+ p)
+       
+        
+       }
+      else  if (choice=="4")
+       {
+        var r=prompt ("enter the radius")
+       
+        var p=Number(r)*2*22/7
+        alert("the area of the circle is"+ p)
+        
+       }
+            
+        </script>
+    </body>
+</html>
