@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            array and map
+        </title>
+    </head>
+    <body>
+        <h1>
+            array mapping
+        </h1>
+        <script>
+            var a=[90,45,78,7,86,1,56,4]
+             document.write(a+"<br>")
+           a.sort(function (a,b){
+                return a-b
+            })
+            document.write(a+"<br>")
+            function maparray(n){
+                return n+12
+            }
+            var newa=a.map(maparray)
+            document.write(newa)
+            
+        </script>
+    </body>
+</html>
